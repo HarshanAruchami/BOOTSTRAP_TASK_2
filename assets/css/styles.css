@@ -1,0 +1,19 @@
+body {
+ margin: 0;
+ padding: 0;
+}
+
+.container {
+ width: 200%;
+ color: brown;
+
+}
+
+img {
+ width: 100%;
+}
+
+.layout_1 .row {
+ width: 100%;
+ padding: 2em 4em;
+}
