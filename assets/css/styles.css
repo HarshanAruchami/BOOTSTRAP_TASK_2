@@ -4,7 +4,6 @@ body {
 }
 
 .container {
- width: 200%;
  color: brown;
 
 }
@@ -16,4 +15,15 @@ img {
 .layout_1 .row {
  width: 100%;
  padding: 2em 4em;
+}
+
+@media (max-width: 360px) {
+ .layout_1 .row{
+  color: chartreuse;
+  font-size: .7rem;
+  padding: 0 4em;
+ }
+ h1{
+  font-size:xx-small;
+ }
 }
