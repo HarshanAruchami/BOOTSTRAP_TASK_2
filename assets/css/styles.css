@@ -10,6 +10,16 @@ body {
 /* ==================
    NAVBAR-NEW
    ==================*/
+/* navbar scrolldown */
+.navbar-fixed-top.scrolled {
+    background-color: #464646 !important;
+    transition: background-color 200ms linear;
+}
+
+.navbar-fixed-top.click-here {
+    background-color: #464646 !important;
+    transition: background-color 100ms linear;
+}
 
 #header {
     position: absolute;
@@ -103,12 +113,11 @@ body {
 /* CARDS */
 .cards .row {
     width: 100%;
-    padding: 0 0 0 0em;
 }
 
 .cards .card {
-    margin: 0 0 0 1em;
     width: 16rem;
+    margin: .5em 0 0 1em;
 }
 
 .cards {
@@ -216,54 +225,6 @@ i {
     border-right: .1em solid #747474;
 }
 
-
-/* LARGE-LAPTOP */
-/* @media (max-width: 2000px) {
-    .heading {
-        padding: 3.5em 0 1em 0em;
-    }
-
-    .layout_3 img {
-        padding: 0 0 0 3em;
-    }
-
-    .logo {
-        width: 60%;
-        padding-left: 5em;
-    }
-
-    #foot {
-        padding: 0 0 0 1.5em;
-        color: darkgray;
-        font-size: x-small;
-    }
-
-    footer img {
-        width: 20%;
-        margin-left: 11.5em;
-    }
-
-    footer a,
-    footer p {
-        font-size: .8rem;
-        padding: 0 0 .5rem 0;
-        font-weight: lighter;
-
-    }
-
-    footer h3 {
-        padding: 0 0 .5em 0;
-        font-size: medium;
-        font-weight: lighter;
-    }
-
-    #content-1,
-    #content-2,
-    #content-3,
-    #content-4 {
-        margin: 0 0 0 0em;
-    }
-} */
 @media (max-width:2300px) {
     #foot {
         padding: 2em 10em 0 0;
@@ -316,7 +277,6 @@ i {
     }
 
     .cards .card {
-        margin: 1em 0 0 1em;
         width: 20.5rem;
     }
 
@@ -379,7 +339,7 @@ i {
     }
 
     .cards .card {
-        margin: 1em 0 0 1em;
+        margin: 0;
         width: 39rem;
     }
 

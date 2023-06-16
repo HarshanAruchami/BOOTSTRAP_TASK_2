@@ -12,18 +12,17 @@
     <!-- swiper slider cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
-
 </head>
 
 <body>
     <section id="header">
         <div class="container-fluid">
-            <div class="navbar navbar-expand-lg navbar-dark">
+            <nav class="navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-dark">
                 <div class="container">
                     <a href="#" class="navbar-brand"><img src="./assets/images/Logo.svg" alt="logo"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-lable="Toggle navigation">
+                        aria-expanded="false" aria-lable="Toggle navigation" id="toggle-size">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -53,7 +52,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </nav>
         </div>
     </section>
 
@@ -108,8 +107,8 @@
 
     <section class="cards">
         <div class="container">
-            <div class="row">
-                <div class="card">
+            <div class="row m-0">
+                <div class="card ml-0">
                     <div class="card-body">
                         <img src="./assets/images/card_icon_1.svg" alt="card_icon_1">
                         <h5 class="card-title">Card title</h5>
@@ -152,90 +151,11 @@
             </div>
         </div>
     </section>
-
-    <section class="layout_3">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 col-8">
-                    <div id="border">
-                        <h3 class="heading-2">GUILD OF ARCHITECTURAL IRONMONGERS</h3>
-                        <p>Established in 1979, we are Oxfordshires only Ironmongery, Door and Security experts to be
-                            fully
-                            accredited by Guild Architectural Ironmongers (GAI). All of our staff are qualified under
-                            the GAI and have regualr training to ensure they are fully up-to-date.
-                        <p>Our expert team have over 35 years' combined experience, and are the only team in Oxfordshire
-                            to
-                            all be fully accredited by the Guild of Architectural Ironmongers.</p>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-4">
-                    <img src="./assets/images/GAI-Corporate-Member-logo.svg" class="img-fluid" alt="GAI-LOGO">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="cards_2">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 pr-0">
-                    <h3 class="heading-3">LATEST ON INSTAGRAM<button type="button"
-                            class="btn btn-outline-dark float-right mr-lg-3">Follow Us</button></h3>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3" id="align-img">
-                    <img src="./assets/images/ig_img_1.svg" class="img-fluid p-0" id="img_1" alt="ig_img_1">
-                </div>
-                <div class="col-sm-3" id="align-img">
-                    <img src="./assets/images/ig_img_2.svg" class="img-fluid p-0" id="img_2" alt="ig_img_2">
-                </div>
-                <div class="col-sm-3" id="align-img">
-                    <img src="./assets/images/ig_img_3.svg" class="img-fluid p-0" id="img_3" alt="ig_img_3">
-                </div>
-                <div class="col-sm-3" id="align-img">
-                    <img src="./assets/images/ig_img_4.svg" class="img-fluid p-0" id="img_4" alt="ig_img_4">
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <section class="Britain-logos">
-        <div class="container">
-            <h3 class="heading-4 text-uppercase">supporting manufacturers made in britian <img
-                    src="./assets/images/flag.svg" class="pb-1" alt="Britain-Flag" width="4%"></h3>
-        </div>
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-sm-2" id="align-img">
-                    <img src="./assets/images/Britain_logo_1.svg" class="img-fluid p-0" id="img_1" alt="ig_img_1">
-                </div>
-                <div class="col-sm-2" id="align-img">
-                    <img src="./assets/images/Britain_logo_2.svg" class="img-fluid p-0" id="img_2" alt="ig_img_2">
-                </div>
-                <div class="col-sm-3" id="align-img">
-                    <img src="./assets/images/Britain_logo_3.svg" class="img-fluid pl-4 pt-2 pr-0" width="90%"
-                        id="img_3" alt="ig_img_3">
-                </div>
-                <div class="col-sm-2" id="align-img">
-                    <img src="./assets/images/Britain_logo_4.svg" class="img-fluid p-0" id="img_4" alt="ig_img_4">
-                </div>
-                <div class="col-sm-2" id="align-img">
-                    <img src="./assets/images/Britain_logo_5.svg" class="img-fluid pt-4 p-0" id="img_5" alt="ig_img_5">
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- carousel -->
     <section class="client-carousel">
         <div class="container-fluid p-0">
             <div class="text-right">
-                <img src="./assets/images/client-carousel.svg" class="bg-img" alt="carousel bg img">
+                <img src="./assets/images/client-carousel.svg" class="swipe bg-img" alt="carousel bg img">
             </div>
         </div>
     </section>
@@ -286,6 +206,91 @@
                 - Pippa Paton Design Ltd</p>
         </swiper-slide>
     </swiper-container>
+
+    <!-- LAYOUT-3 -->
+    <section class="layout_3">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-8">
+                    <div id="border">
+                        <h3 class="heading-2">GUILD OF ARCHITECTURAL IRONMONGERS</h3>
+                        <p>Established in 1979, we are Oxfordshires only Ironmongery, Door and Security experts to be
+                            fully
+                            accredited by Guild Architectural Ironmongers (GAI). All of our staff are qualified under
+                            the GAI and have regualr training to ensure they are fully up-to-date.
+                        <p>Our expert team have over 35 years' combined experience, and are the only team in Oxfordshire
+                            to
+                            all be fully accredited by the Guild of Architectural Ironmongers.</p>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-4">
+                    <img src="./assets/images/GAI-Corporate-Member-logo.svg" class="img-fluid" alt="GAI-LOGO">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards_2">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 pr-0">
+                    <h3 class="heading-3">LATEST ON INSTAGRAM</h3>
+                </div>
+                <div class="col-2">
+                    <button type="button" class="btn btn-outline-dark float-right mr-lg-3">Follow Us</button>
+                </div>
+            </div>
+            <div class="row" style="display: flex;justify-content: center; position: relative;">
+                <h3 class="heading-3">LATEST ON INSTAGRAM</h3>
+                <button type="button" class="btn btn-outline-dark">Follow Us</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3" id="align-img">
+                    <img src="./assets/images/ig_img_1.svg" class="img-fluid p-0" id="img_1" alt="ig_img_1">
+                </div>
+                <div class="col-sm-3" id="align-img">
+                    <img src="./assets/images/ig_img_2.svg" class="img-fluid p-0" id="img_2" alt="ig_img_2">
+                </div>
+                <div class="col-sm-3" id="align-img">
+                    <img src="./assets/images/ig_img_3.svg" class="img-fluid p-0" id="img_3" alt="ig_img_3">
+                </div>
+                <div class="col-sm-3" id="align-img">
+                    <img src="./assets/images/ig_img_4.svg" class="img-fluid p-0" id="img_4" alt="ig_img_4">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="Britain-logos">
+        <div class="container">
+            <h3 class="heading-4 text-uppercase">supporting manufacturers made in britian <img
+                    src="./assets/images/flag.svg" class="pb-1" alt="Britain-Flag" width="4%"></h3>
+        </div>
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-sm-2" id="align-img">
+                    <img src="./assets/images/Britain_logo_1.svg" class="img-fluid p-0" id="img_1" alt="ig_img_1">
+                </div>
+                <div class="col-sm-2" id="align-img">
+                    <img src="./assets/images/Britain_logo_2.svg" class="img-fluid p-0" id="img_2" alt="ig_img_2">
+                </div>
+                <div class="col-sm-3" id="align-img">
+                    <img src="./assets/images/Britain_logo_3.svg" class="img-fluid pl-4 pt-2 pr-0" width="90%"
+                        id="img_3" alt="ig_img_3">
+                </div>
+                <div class="col-sm-2" id="align-img">
+                    <img src="./assets/images/Britain_logo_4.svg" class="img-fluid p-0" id="img_4" alt="ig_img_4">
+                </div>
+                <div class="col-sm-2" id="align-img">
+                    <img src="./assets/images/Britain_logo_5.svg" class="img-fluid pt-4 p-0" id="img_5" alt="ig_img_5">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- footer -->
     <section class="footer_layout">
@@ -359,10 +364,20 @@
     </section>
 
 </body>
+<!-- jquery cdns -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<!-- dropdown bootstrap cdn -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
 <!-- swiper cdn -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 <!-- js bootstrap file linking -->
 <script src="./assets/js/bootstrap.bundle.js"></script>
+<!-- JS file linking -->
+<script src="./assets/js/index.js"></script>
 <!-- Fontawsome JS link -->
 <script src="https://kit.fontawesome.com/d509f79d02.js" crossorigin="anonymous"></script>
 
