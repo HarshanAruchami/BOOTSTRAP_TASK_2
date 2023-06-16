@@ -85,7 +85,7 @@ body {
 
 .layout_1 img {
     width: 100%;
-    padding: 9em 0;
+    padding: 9em 0 0 0;
     /* right: -10%;
     transform: translatex(20%); */
     /* Adjust the percentage value to crop the desired amount from the bottom */
@@ -97,6 +97,7 @@ body {
 
 .heading {
     padding: 3.5em 0 1em 0em;
+    color: #219c9a;
 }
 
 /* CARDS */
@@ -128,6 +129,7 @@ body {
 .heading-3,
 .heading-4 {
     padding: 0 0 1em 0;
+    color: #219c9a;
 }
 
 .layout_3 img {
@@ -262,10 +264,9 @@ i {
         margin: 0 0 0 0em;
     }
 } */
-@media (max-width:2500px) {
+@media (max-width:2300px) {
     #foot {
-        padding-left: 0em;
-        padding-right: 10em;
+        padding: 2em 10em 0 0;
     }
 }
 
@@ -274,6 +275,15 @@ i {
     .cards .card {
         margin: 0 0 0 1em;
         width: 13.5rem;
+    }
+
+    .nav-item {
+        font-weight: 600;
+        font-size: xx-small;
+        text-transform: uppercase;
+        padding-left: 10px;
+
+
     }
 
     #foot {
@@ -458,7 +468,11 @@ i {
 
     /* navbar */
     .navbar-brand {
-        width: 50%;
+        width: 60%;
+    }
+
+    .navbar-brand img {
+        margin-left: 0%;
     }
 
 
