@@ -16,62 +16,57 @@
 </head>
 
 <body>
-    <header>
-        <div class="container-fluid p-0">
-            <img src="/assets/images/banner.svg" alt="banner" class="img-fluid">
+    <section id="header">
+        <div class="container-fluid">
+            <div class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <a href="#" class="navbar-brand"><img src="./assets/images/Logo.svg" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-lable="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a href="#" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <nav class="navbar navbar-expand-lg fixed-top text-light">
-            <a class="navbar-brand" id="logo-container" href="#"><img src="./assets/images/Logo.svg" class="logo"
-                    alt="logo"></a>
-            <!-- toggle -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- contact -->
-            <!-- clickables -->
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">OUR SHOWROOM</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">WHO WE ARE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">WHAT WE DO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">WHO WE HELP</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">RESOURCE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">SPEAK TO US</a>
-                    </li>
-                </ul>
+    </section>
+
+    <section class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <h2>"The door handle is
+                        the handshake of
+                        the building."</h2>
+                    <p>Lorem ipsum dols voluptatem jhvgu ygiubh uikhkbjhb kunhiljnl jnlkjnj
+                        odio ab ex sit adipisci?</p>
+                    <button type="button" class="btn btn-outline-light">Visit our showroom</button>
+                </div>
             </div>
-        </nav>
-        <!-- <div class="banner-content">
-            <div class="col-6">
-                <h1 class="heading-banner ban-align pb-4">"The door handle is
-                    the handshake of
-                    the building."</h1>
-                <p class="pb-4">Lorem ipsum dolor sit lem ipsum dolor sit amet consectetur
-                    adipisicing.</p>
-                <button type="button" class="btn btn-outline-light">Visit our showroom</button>
-            </div>
-        </div> -->
+        </div>
+    </section>
     </header>
 
     <section class="layout_1">
-        <div class="container-fluid p-0 m-0">
+        <div class="container">
             <div class="row">
-                <div class="col-9 p-0">
+                <div class="col-9">
                     <h3 class="heading">EXPERTS IN ARCHITECTURAL IRONMONGERY</h3>
                     <p>Established in 1979, we are Oxfordshires only Ironmongery, Door and Security experts to be fully
                         accredited by the
@@ -84,7 +79,6 @@
                         access
                         to a huge range of
                         thcoe highest quality products.</p>
-
                     <p>Like our customers, we are always on the hunt for beautiful and well made materials. That's why
                         we
                         have longstanding
@@ -101,56 +95,58 @@
             </div>
         </div>
     </section>
-    <!-- <section class="cards">
-        <div class="container-fluid">
+
+    <section class="cards">
+        <div class="container">
             <div class="row">
-                <div class="card m-sm-0" style="width: 30rem;">
+                <div class="card">
                     <div class="card-body">
                         <img src="./assets/images/card_icon_1.svg" alt="card_icon_1">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text p-0">Some quick example text to build on the card title and make up
                             the
                             bulk of the card's content.</p>
-                        <a href="#" class="card-link"><button>Learn More</button></a>
+                        <button type="button" class="btn btn-outline-dark">Learn More</button>
                     </div>
                 </div>
-                <div class="card" style="width: 30rem;">
+                <div class="card">
                     <div class="card-body">
                         <img src="./assets/images/card_icon_2.svg" alt="card_icon_2">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text p-0">Some quick example text to build on the card title and make up
                             the
                             bulk of the card's content.</p>
-                        <a href="#" class="card-link"><button>Learn More</button></a>
+                        <button type="button" class="btn btn-outline-dark">Learn More</button>
                     </div>
                 </div>
-                <div class="card" style="width: 30rem;">
+                <div class="card">
                     <div class="card-body">
                         <img src="./assets/images/card_icon_3.svg" alt="card_icon_3">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text p-0">Some quick example text to build on the card title and make up
                             the
                             bulk of the card's content.</p>
-                        <a href="#" class="card-link"><button>Learn More</button></a>
+                        <button type="button" class="btn btn-outline-dark">Learn More</button>
                     </div>
                 </div>
-                <div class="card" style="width: 30rem;">
+                <div class="card mr-0">
                     <div class="card-body">
                         <img src="./assets/images/card_icon_4.svg" alt="card_icon_4">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text p-0">Some quick example text to build on the card title and make up
                             the
                             bulk of the card's content.</p>
-                        <a href="#" class="card-link"><button>Learn More</button></a>
+                        <button type="button" class="btn btn-outline-dark">Learn More</button>
                     </div>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
+
     <section class="layout_3">
-        <div class="container-fluid p-0 m-0">
+        <div class="container">
             <div class="row">
-                <div class="col-9 col-md-8 p-0">
+                <div class="col-sm-8 col-8">
                     <div id="border">
                         <h3 class="heading-2">GUILD OF ARCHITECTURAL IRONMONGERS</h3>
                         <p>Established in 1979, we are Oxfordshires only Ironmongery, Door and Security experts to be
@@ -163,7 +159,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-3 p-0">
+                <div class="col-sm-4 col-4">
                     <img src="./assets/images/GAI-Corporate-Member-logo.svg" class="img-fluid" alt="GAI-LOGO">
                 </div>
             </div>
@@ -204,13 +200,14 @@
             </div>
         </div>
     </section> -->
-    <section class="client-carousel">
+    <!-- carousel -->
+    <!-- <section class="client-carousel">
         <div class="container-fluid p-0">
             <div class="text-right">
                 <img src="./assets/images/client-carousel.svg" class="bg-img" alt="carousel bg img">
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- <swiper-container class="mySwiper" space-between="30" pagination="true" pagination-clickable="true">
         <swiper-slide>Slide 1</swiper-slide>
         <swiper-slide>Slide 2</swiper-slide>
@@ -281,7 +278,7 @@
     </section> -->
     <section class="footer_layout">
         <footer>
-            <div class="container-fluid text-light">
+            <div class="container text-light">
                 <div class="row justify-content-center justify-content-lg-start">
                     <img src="./assets/images/Logo.svg" alt="footer-logo">
                 </div>
